@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js" ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1,0, minimum-scale=1.0">
+    <title>Challenge</title>
+</head>
+<body>
+    <!--Cuerpo de la pagina web-->
+    <div class="contenedor">
+<div class="logo">
+<img class="logoAlura" src="img/logo.png" alt="">
+<h1 class="titulo">Encriptador de texto Alura</h1>
+</div>
+<div class="left">
+    <!--caja de texto-->
+<input class="caja-de-texto" id="inputTexto"placeholder="Ingrese el texto aqui" type="text">
+</div>
+<div class="right" style="background: #FFFFFF;">
+<img id="imagen-derecha" src="img/munheco.png">
+<h2 id="texto">Ningun mensaje fue encontrado</h2>
+<textarea id="texto2" name="name" rows="8" cols="80" disabled="true">Ingrese el texto que desees encriptar o desencriptar</textarea>
+<button id="copiar" type="text" onclick="copiar(),ocultar()" name="button">Copiar</button>
+</div>
+<div class="button-encrip">
+    <div id="avisos">
+    <p id="aviso">Solo minusculas y sin acentos</p>
+</div>
+<!--Botonones para encriptar y desencriptar-->
+<button type="button" onclick="encriptar()" id="encriptar">Encriptar</button>
+<button type="button" onclick="desencriptar()" id="desencriptar">Desencriptar</button></div>
+</div>
+</body>
+</html>
